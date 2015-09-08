@@ -169,3 +169,13 @@ extension FriendSearchViewController: FriendSearchTableViewCellDelegate {
   }
   
 }
+
+extension PFUser {
+  public override func isEqual(object: AnyObject?) -> Bool {
+    if (object as? PFUser)?.objectId == self.objectId {
+      return true
+    } else {
+      return super.isEqual(object)
+    }
+  }
+}

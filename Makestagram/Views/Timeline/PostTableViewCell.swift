@@ -59,7 +59,3 @@ class PostTableViewCell: UITableViewCell {
     return commaSeparatedUserList
   }
 }
-
-//public func == (lhs: PFUser, rhs: PFUser) -> Bool {
-//  return lhs.objectId == rhs.objectId
-//}
